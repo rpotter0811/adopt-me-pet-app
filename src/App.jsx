@@ -1,3 +1,6 @@
+import React from 'react';
+import { createRoot } from 'react-dom';
+
 // (8): Make a Pet component. All we've done here is make our "factory" for a Pet component to be used.
 // (9): We want to pass data from our App component to our Pet component. So to do that, we pass 'props' into Pet. We want to use these 'properites' passed from the parent component in our array of created elements. 
 const Pet = (props) => {
@@ -44,7 +47,7 @@ const App = () => {
 // (7): creating a variable in which we want our component to exist in. In this case, we're placing the compnent in the 'div' tag specified by the id="root"
 const container = document.getElementById("root");
 // ReactDOM.createRoot() is th NEW way of rendering to the DOM from React. With React 18, we got something called concurrency. Concurrent Mode is now built into React. This is simply just the new way of showing the use of React 18. This used to be ReactDOM.render() which is the method you're used to. It would look like this: ReactDOM.render(container, <App/>, )
-const root = ReactDOM.createRoot(container);
+const root = createRoot(container);
 // Notice we use React.createElement() again, but this time we're passing in the component. The component passed it then gets rendered. 
 root.render(React.createElement(App));
 

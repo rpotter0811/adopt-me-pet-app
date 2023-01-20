@@ -11,11 +11,9 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- (3): created a div tag inside our 'body' tags.  -->
-    <div id ="root">not rendered</div>
-    <!-- (4): following the div tags, we've included two script tags (the src attribute followed by the link is specifying the URL of an external script file. All scripts from the specfied files will be loaded into our HTML page). In the links, you'll see that we're grabbing the React API part of the library followed by the React DOM, which renders everything to the DOM -->
-    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
-    <script src="App.js"></script>
+
+    <div id="root">not rendered</div>
+    <script type="module" src="App.jsx"></script>
+
 </body>
 </html>
