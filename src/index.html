@@ -1,11 +1,19 @@
+<!-- (1): In VS Code, we can use a VS code built-in tool called Emmet, which displays an abbreviation for suggested documentation. We can quickly create the structure of our HTML file by typing 'html:5' into the first line and Emmet suggests the HTML format for us. This is the first thing we've done in this project; we successfully created our HTML file. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- (2): changed the title of our document from 'Document' to the title of the prject -->
+    <title>Adopt Me! v8</title>
+    <!-- (5): added a link tag within our 'head' tag to bring in our CSS styling into our file. The 'ref' attribute specifies the relationship between the current document and the linked document. See CSS file in src folder. -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+
+    <div id="root">not rendered</div>
+    <script type="module" src="App.jsx"></script>
+
 </body>
 </html>
